@@ -98,13 +98,14 @@ export default class Events extends Component {
         <input type="submit" value="Create Event" />
       </form>
     ) : (
-      <div>
+    <div>
+        <img src="https://i.imgur.com/7EVpbk2.png" alt="logo"></img>
         <h1> Events </h1>
         {eventsList}
         <div>
-          <button onClick={this.handleToggleNewForm}>Create New Event</button>
+        <button onClick={this.handleToggleNewForm}>Create New Event</button>
         </div>
-      </div>
+        </div>
     );
   }
 }
