@@ -31,6 +31,7 @@ export default class Events extends Component {
 
   getAllEvents = () => {
     axios.get("/api/events/").then(res => {
+      console.log(res.data);
       this.setState({ events: res.data });
     });
   };
@@ -101,9 +102,7 @@ export default class Events extends Component {
         <h1> Events </h1>
         {eventsList}
         <div>
-          <button onClick={this.handleToggleNewForm}>
-            Create New Event
-          </button>
+          <button onClick={this.handleToggleNewForm}>Create New Event</button>
         </div>
       </div>
     );
