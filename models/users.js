@@ -25,7 +25,7 @@ const mongoose = require("./connection.js");
  * NOTE: skip this if you are not using mongoose
  *
  */
-const MeetupSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
   name: String,
   description: String
 });
@@ -36,33 +36,33 @@ const MeetupSchema = new mongoose.Schema({
  * NOTE: skip this if you are not using mongoose
  *
  */
-const MeetupCollection = mongoose.model("Meetup", MeetupSchema);
+const UserCollection = mongoose.model("User", UserSchema);
 
 /* Step 4
  *
  * TODO: delete this it's just a sample
  *
  */
-function getAllMeetups() {
-  return MeetupCollection.find();
+function getAllUsers() {
+  return UserCollection.find();
 }
 
-function getMeetup(userId) {
-  return MeetupCollection.findById(meetupId);
+function getUser(userId) {
+  return UserCollection.findById(userId);
 }
 
-function addNewMeetup(meetupObject) {
-  return MeetupCollection.create(meetupObject);
+function addNewUser(userObject) {
+  return UserCollection.create(userObject);
 }
 
-function updateMeetup(userId, updatedMeetup) {
-  return MeetupCollection.findByIdAndUpdate(meetupId, updatedMeetup, {
+function updateUser(userId, updatedUser) {
+  return UserCollection.findByIdAndUpdate(userId, updatedUser, {
     new: true
   });
 }
 
-function deleteMeetup(meetupId) {
-  return MeetupCollection.findByIdAndDelete(meetupId);
+function deleteUser(userId) {
+  return UserCollection.findByIdAndDelete(userId);
 }
 /* Step 5
  *
@@ -70,9 +70,9 @@ function deleteMeetup(meetupId) {
  * object
  */
 module.exports = {
-  getAllMeetups,
-  getMeetup,
-  addNewMeetup,
-  updateMeetup,
-  deleteMeetup
+  getAllUsers,
+  getUser,
+  addNewUser,
+  updateUser,
+  deleteUser
 };
