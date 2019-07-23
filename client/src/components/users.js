@@ -43,8 +43,8 @@ export default class Users extends Component {
   };
 
   handleInputChange = users => {
-    const copiedUser = { ...this.state.newUser };
-    copiedUser[user.target.name] = user.target.value;
+    const copiedUsers = { ...this.state.newUsers };
+    copiedUsers[users.target.name] = user.target.value;
 
     this.setState({ newUser: copiedUser });
   };
