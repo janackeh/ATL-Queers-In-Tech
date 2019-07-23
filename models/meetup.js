@@ -47,7 +47,7 @@ function getAllMeetups() {
   return MeetupCollection.find();
 }
 
-function getMeetup(userId) {
+function getMeetup(meetupId) {
   return MeetupCollection.findById(meetupId);
 }
 
@@ -55,7 +55,7 @@ function addNewMeetup(meetupObject) {
   return MeetupCollection.create(meetupObject);
 }
 
-function updateMeetup(userId, updatedMeetup) {
+function updateMeetup(meetupId, updatedMeetup) {
   return MeetupCollection.findByIdAndUpdate(meetupId, updatedMeetup, {
     new: true
   });

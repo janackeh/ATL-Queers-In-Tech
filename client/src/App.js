@@ -3,6 +3,8 @@ import Navbar from "./components/navbar"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Events from "./components/events";
 import SingleEvent from "./components/event.js";
+import Users from "./components/users"
+
 import "./App.css";
 
 function App() {
