@@ -18,10 +18,10 @@ export default class SingleUser extends Component {
   }
 
   handleInputChange = users => {
-    const copiedUsers = { ...this.state.users };
-    copiedUsers[event.target.name] = users.target.value;
+    let copiedUsers = { ...this.state.users };
+    copiedUsers =[users.target.name] = users.target.value;
 
-    this.setState({ event: copiedUsers });
+    this.setState({ users: copiedUsers });
   };
 
   handleSubmit = users => {
@@ -31,7 +31,7 @@ export default class SingleUser extends Component {
       .put(`/api/users/${this.state.users._id}`, this.state.users)
       .then(res => {
         this.setState({
-          event: res.data,
+          users: res.data,
           isEditFormDisplayed: false
         });
       });

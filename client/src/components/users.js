@@ -44,13 +44,13 @@ export default class Users extends Component {
 
   handleInputChange = users => {
     const copiedUsers = { ...this.state.newUsers };
-    copiedUsers[users.target.name] = user.target.value;
+    copiedUsers[users.target.name] = users.target.value;
 
-    this.setState({ newUser: copiedUser });
+    this.setState({ newUsers: copiedUsers });
   };
 
   handleSubmit = users => {
-    event.preventDefault();
+    users.preventDefault();
 
     axios.post("/api/users/", this.state.newUsers).then(res => {
       this.setState({ isNewFormDisplayed: false });
@@ -69,7 +69,7 @@ export default class Users extends Component {
       return (
         <div>
           <Link key={users._id} to={`/users/${users._id}`}>
-            {user.name}
+            {users.name}
           </Link>
         </div>
       );
