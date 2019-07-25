@@ -15,7 +15,7 @@ export default class Users extends Component {
     users: [],
     isNewFormDisplayed: false,
     addNewUser: [],
-    newUser: ""
+    newUser: "",
   };
 
   /* Step 4
@@ -43,16 +43,16 @@ export default class Users extends Component {
   };
 
   handleInputChange = users => {
-    const copiedUsers = { ...this.state.newUsers };
+    const copiedUsers = { ...this.state.newUser };
     copiedUsers[users.target.name] = users.target.value;
 
-    this.setState({ newUsers: copiedUsers });
+    this.setState({ newUser: copiedUsers });
   };
 
   handleSubmit = users => {
     users.preventDefault();
 
-    axios.post("/api/users/", this.state.newUsers).then(res => {
+    axios.post("/api/users/", this.state.newUser).then(res => {
       this.setState({ isNewFormDisplayed: false });
       this.getAllUsers();
     });
@@ -65,6 +65,7 @@ export default class Users extends Component {
    *
    */
   render() {
+    console.log(this.state.users)
     let usersList = this.state.users.map(users => {
       return (
         <div>
@@ -83,7 +84,7 @@ export default class Users extends Component {
           id="new-users-name"
           name="name"
           onChange={this.handleInputChange}
-          value={this.state.newUsers.name}
+          value={this.state.newUser.name}
         />
 
         <label htmlFor="new-users-description">User Description</label>
@@ -92,20 +93,20 @@ export default class Users extends Component {
           id="new-users-description"
           name="description"
           onChange={this.handleInputChange}
-          value={this.state.newUsers.description}
+          value={this.state.newUser.description}
         />
 
         <input type="submit" value="Create User" />
       </form>
     ) : (
-    <div>
-        <img src="https://i.imgur.com/7EVpbk2.png" alt="logo"></img>
-        <h1> Users </h1>
-        {usersList}
         <div>
-        <button onClick={this.handleToggleNewForm}>Create New User</button>
+          <img src="https://i.imgur.com/7EVpbk2.png" alt="logo"></img>
+          <h1> Users </h1>
+          {usersList}
+          <div>
+            <button onClick={this.handleToggleNewForm}>Create New User</button>
+          </div>
         </div>
-        </div>
-    );
+      );
   }
 }

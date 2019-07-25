@@ -17,7 +17,7 @@ const app = express();
  *
  */
 const { meetupRouter } = require("./controllers/meetup.js");
-const { userRouter } = require("./controllers/users.js");
+const { usersRouter } = require("./controllers/users.js");
 
 /* Step 3
  *
@@ -48,7 +48,7 @@ app.use(express.static(`${__dirname}/client/build`));
  * the paths defined in the router.
  */
 app.use("/api/events", meetupRouter);
-// app.use("/api/users", userRouter);
+app.use("/api/users", usersRouter);
 
 /* Step 5
  *

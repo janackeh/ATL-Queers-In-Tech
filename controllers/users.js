@@ -37,7 +37,7 @@ const usersRouter = express.Router();
  */
 
 usersRouter.get("/", (req, res) => {
-  meetupApi.getAllUsers().then(users => {
+usersApi.getAllUsers().then(users => {
     res.json(users);
   });
 });
