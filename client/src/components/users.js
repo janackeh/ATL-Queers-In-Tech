@@ -78,7 +78,7 @@ export default class Users extends Component {
 
     return this.state.isNewFormDisplayed ? (
       <form onSubmit={this.handleSubmit}>
-        <label htmlFor="new-users-name">User Name</label>
+        <label htmlFor="new-users-name">Public Display Name</label>
         <input
           type="text"
           id="new-users-name"
@@ -87,7 +87,7 @@ export default class Users extends Component {
           value={this.state.newUser.name}
         />
 
-        <label htmlFor="new-users-description">User Description</label>
+        <label htmlFor="new-users-description">About Me</label>
         <input
           type="text"
           id="new-users-description"

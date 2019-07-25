@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import {Navbar} from 'react-bootstrap'
 
 /* Step 2
  * Rename this class to reflect the component being created
@@ -68,6 +69,7 @@ export default class Events extends Component {
     let eventsList = this.state.events.map(event => {
       return (
         <div>
+          <Navbar />
           <Link key={event._id} to={`/events/${event._id}`}>
             {event.name}
           </Link>

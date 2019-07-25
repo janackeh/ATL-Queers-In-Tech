@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 
 export default class SingleUser extends Component {
   state = {
-    event: {},
+    users: {},
     isEditFormDisplayed: false,
     redirectHome: false
   };
@@ -67,7 +67,7 @@ export default class SingleUser extends Component {
     }
     return this.state.isEditFormDisplayed ? (
       <form onSubmit={this.handleSubmit}>
-        <label htmlFor="users-name">User Name</label>
+        <label htmlFor="users-name">Public Display Name</label>
         <input
           type="text"
           id="users-name"
@@ -76,7 +76,7 @@ export default class SingleUser extends Component {
           value={this.state.users.name}
         />
 
-        <label htmlFor="users-description">Users Description</label>
+        <label htmlFor="users-description"> About Me </label>
         <input
           type="text"
           id="users-description"
