@@ -18,7 +18,7 @@ export default class SingleEvent extends Component {
   }
 
   handleInputChange = event => {
-    const copiedEvent = { ...this.state.event };
+    let copiedEvent = { ...this.state.event };
     copiedEvent[event.target.name] = event.target.value;
 
     this.setState({ event: copiedEvent });

@@ -16,7 +16,7 @@ export default class Events extends Component {
     events: [],
     isNewFormDisplayed: false,
     addNewEvent: [],
-    newEvent: ""
+    newEvent: "",
   };
 
   /* Step 4
