@@ -14,12 +14,13 @@ export default class SingleUser extends Component {
       .get(`/api/users/${this.props.match.params.usersId}`)
       .then(res => {
         this.setState({ users: res.data });
+        console.log(res)
       });
   }
 
-  handleInputChange = users => {
+  handleInputChange = event => {
     let copiedUsers = { ...this.state.users };
-    copiedUsers =[users.target.name] = users.target.value;
+    copiedUsers[event.target.name] = event.target.value;
 
     this.setState({ users: copiedUsers });
   };
@@ -90,7 +91,7 @@ export default class SingleUser extends Component {
     ) : (
       <div>
         <button onClick={this.handleToggleEditForm}>Edit Users</button>
-        <button onClick={this.handleDeleteEvent}>Delete Users</button>
+        <button onClick={this.handleDeleteUsers}>Delete Users</button>
         {this.renderRedirect()}
         <button onClick={this.redirectHome}>Back to Home</button>
         <h2>{this.state.users.name}</h2>

@@ -18,10 +18,10 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={AdminView} />
-          <Route path="/events" component={Events}/>
+          <Route path="/events" component={Events} />
           <Route path="/events/:eventId" component={SingleEvent} />
-          <Route path="/user" component={Users}/>
-          <Route path="/users/:usersId" component={SingleUser}/>
+          <Route path="/user" component={Users} />
+          <Route path="/users/:usersId" component={SingleUser} />
         </Switch>
       </Router>
     </div>

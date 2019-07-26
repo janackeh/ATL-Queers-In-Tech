@@ -1,28 +1,19 @@
 import React, { Component } from 'react'
+import { Navbar as BNavBar, Nav } from 'react-bootstrap'
 
 class Navbar extends Component {
-  render() {
-      return (
-          <div className="navbar" key = {this.props.index}>
-              <div>
-          <a href="#description">ABOUT</a>
-          </div>
-          <div>
-          <a href="#events">EVENTS</a>
-          </div>
-          <div>
-          <h1>ATL QUEERS IN TECH</h1>
-          </div>
-          <div>
-          <a href="#profile">PROFILE</a>
-          </div>
-          <div>
-          <a href="#login">LOGIN</a>
-          </div>
-
-         
-          </div>
-      )
+    render() {
+        return (
+            <BNavBar bg="dark" variant="dark">
+                <Nav className="mr-auto">
+                    <Nav.Link href="#about">ABOUT</Nav.Link>
+                    <Nav.Link href="#admin">ADMIN</Nav.Link>
+                    <Nav.Link href="#events">EVENTS</Nav.Link>
+                    <Nav.Link href="#profile">PROFILE</Nav.Link>
+                    <Nav.Link href="#login">LOGIN</Nav.Link>
+                </Nav>
+            </BNavBar>
+        )
     }
 }
 

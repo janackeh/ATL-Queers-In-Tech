@@ -66,9 +66,9 @@ usersRouter.post("/", (req, res) => {
 
 usersRouter.put("/:usersId", (req, res) => {
   usersApi
-    .updateUsers(req.params.usersId, req.body)
-    .then(updatedUsers => {
-      res.json(updatedUsers);
+    .updateUser(req.params.usersId, req.body)
+    .then(updateUsers => {
+      res.json(updateUsers);
     })
     .catch(err => {
       console.log(err);
@@ -77,7 +77,7 @@ usersRouter.put("/:usersId", (req, res) => {
 
 usersRouter.delete("/:usersId", (req, res) => {
   usersApi
-    .deleteUsers(req.params.usersId)
+    .deleteUser(req.params.usersId)
     .then(users => {
       res.json(users);
     })

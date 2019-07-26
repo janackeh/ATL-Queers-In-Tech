@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import {Navbar} from 'react-bootstrap'
+import { Navbar } from 'react-bootstrap'
 
 /* Step 2
  * Rename this class to reflect the component being created
@@ -69,7 +69,7 @@ export default class Events extends Component {
     let eventsList = this.state.events.map(event => {
       return (
         <div>
-          <Navbar />
+
           <Link key={event._id} to={`/events/${event._id}`}>
             {event.name}
           </Link>
@@ -100,14 +100,14 @@ export default class Events extends Component {
         <input type="submit" value="Create Event" />
       </form>
     ) : (
-    <div>
-        <img src="https://i.imgur.com/7EVpbk2.png" alt="logo"></img>
-        <h1> Events </h1>
-        {eventsList}
         <div>
-        <button onClick={this.handleToggleNewForm}>Create New Event</button>
+          <img src="https://i.imgur.com/7EVpbk2.png" alt="logo"></img>
+          <h1> Events </h1>
+          {eventsList}
+          <div>
+            <button onClick={this.handleToggleNewForm}>Create New Event</button>
+          </div>
         </div>
-        </div>
-    );
+      );
   }
 }
