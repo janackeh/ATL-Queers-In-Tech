@@ -1,31 +1,29 @@
-# mern-template-project
+# Project 3 : ATL Queers In Tech [MERN App]
+![ATL](https://user-images.githubusercontent.com/50855671/62056964-ab8c2f00-b1ec-11e9-8900-57bd8551317c.png)
+
+Welcome to my 3rd project! In this project, I wanted to create a meetup type app specifically for the LGBTQ+ STEM community in Atlanta. The onjective of this app is to be able to create events and users in one simple application. 
+
+## Links :
+
+* Trello project board : [trello]()
+* Heroku : [heroku] ()
+
+## Wireframes :
+
+## ERD :
+
+## Technologies Used : 
+Back End :
+* Express
+* Node.js
+* MongoDB
+* Mongoose
+
+Front End :
+* CSS
+* React
+* React Boostrap 
+
 
 # Setup A New Project From This Template
 
-If you are starting a new project do the following:
-
-1. copy/download this directory to where you new project is located and rename
-   it to the name of your project.
-1. change your directory (`cd`) into the copied project template
-1. `npm install`
-1. `npm run dev`
-1. Open a new browser window and navigate to the URL http://localhost:3000/
-    here you should see `hello world` displayed after page load
-    updates should show up here automatically
-1. see the `client/src` `readme.md` file for more information on the react project
-
-# Setup A New Project Without This Template
-
-If you want to start a project without using this template directory do the
-following:
-
-
-1. `mkdir <project-name>`
-1. `cd <project-name>`
-1. `echo "# <project-name>" > readme.md`
-1. `git init`
-1. `git add readme.md `
-1. `git commit -m "init repo with readme.md"`
-1. `npm init`
-1. `mkdir models views controllers`
-1. `touch ./server.js`

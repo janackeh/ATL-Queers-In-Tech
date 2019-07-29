@@ -23,7 +23,7 @@ class LandingPage extends Component {
   <p>
     <Link to="/events"><Button variant="primary" active={true}>SEE OUR EVENTS</Button></Link>
     <div>
-    {/*     <Link to="/login"> Already a member? Login here</Link> */}
+   
 </div>
 </p>
 
