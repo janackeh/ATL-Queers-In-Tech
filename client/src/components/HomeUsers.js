@@ -71,7 +71,7 @@ export default class HomeUsers extends Component {
         <div>
           <Link key={users._id} to={`/users/${users._id}`}>
             {users.name}
-          </Link>git 
+          </Link>
         </div>
       );
     });

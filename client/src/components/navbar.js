@@ -11,7 +11,7 @@ class Navbar extends Component {
                     <Nav.Link href="/adminview">ADMIN</Nav.Link>
                     <Nav.Link href="/home">EVENTS</Nav.Link>
                     <Nav.Link href="/HomeUsers">PEOPLE</Nav.Link>
-                    <Nav.Link href="/login">LOGIN</Nav.Link>
+                   
                 </Nav>
             </BNavBar>
         )

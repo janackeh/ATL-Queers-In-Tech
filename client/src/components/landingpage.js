@@ -23,7 +23,7 @@ class LandingPage extends Component {
   <p>
     <Button variant="primary" link to="/joinform" active={true}>JOIN FOR FREE!</Button>
     <div>
-    <Link to="/login"> Already a member? Login here</Link>
+    {/* <Link to="/login"> Already a member? Login here</Link> */}
 </div>
 </p>
 
