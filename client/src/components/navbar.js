@@ -10,7 +10,7 @@ class Navbar extends Component {
                     <Nav.Link href="/about">ABOUT</Nav.Link>
                     <Nav.Link href="/adminview">ADMIN</Nav.Link>
                     <Nav.Link href="/home">EVENTS</Nav.Link>
-                    <Nav.Link href="/people">PEOPLE</Nav.Link>
+                    <Nav.Link href="/HomeUsers">PEOPLE</Nav.Link>
                     <Nav.Link href="/login">LOGIN</Nav.Link>
                 </Nav>
             </BNavBar>
