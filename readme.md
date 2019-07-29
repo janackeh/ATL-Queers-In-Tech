@@ -6,7 +6,7 @@ Welcome to my 3rd project! In this project, I wanted to create a meetup type app
 ## Links :
 
 * Trello project board : [trello](https://trello.com/b/uZO1gNOM/janackeh-project-3)
-* Heroku : [heroku] (https://dashboard.heroku.com/apps/atl-queers-in-tech)
+* Heroku : [heroku] (https://atl-queers-in-tech.herokuapp.com/)
 
 ## Wireframes :
 
