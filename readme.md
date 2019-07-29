@@ -5,8 +5,8 @@ Welcome to my 3rd project! In this project, I wanted to create a meetup type app
 
 ## Links :
 
-* Trello project board : [trello]()
-* Heroku : [heroku] ()
+* Trello project board : [trello](https://trello.com/b/uZO1gNOM/janackeh-project-3)
+* Heroku : [heroku] (https://dashboard.heroku.com/apps/atl-queers-in-tech)
 
 ## Wireframes :
 
@@ -25,5 +25,7 @@ Front End :
 * React Boostrap 
 
 
-# Setup A New Project From This Template
+## Future Development :
+* add a login & join form
+* disable edit & delete buttons on individual pages
 
