@@ -1,4 +1,4 @@
-import React, { Component} from 'react'
+import React, { Component } from 'react';
 import Events from "./events"
 import Users from "./users"
 
@@ -9,8 +9,6 @@ class AdminView extends Component {
                 <h1>Admin View</h1>
                 <Events />
                 <Users />
-                
-                
             </div>
 
         )
