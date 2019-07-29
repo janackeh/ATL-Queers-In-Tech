@@ -12,13 +12,6 @@ class Home extends Component {
         newEvent: "",
       };
     
-      /* Step 4
-       * Use componentDidMount to retrieve any data to display
-       *   Here you can make calls to your local express server
-       *   or to an external API
-       *   setState can be run here as well
-       *   -REMINDER remember `setState` it is an async function
-       */
       componentDidMount() {
         this.getAllEvents();
       }
@@ -52,12 +45,6 @@ class Home extends Component {
         });
       };
     
-      /* Step 5
-       *  The render function manages what is shown in the browser
-       *  TODO: delete the jsx returned
-       *   and replace it with your own custom jsx template
-       *
-       */
       render() {
         let eventsList = this.state.events.map(event => {
           return (
