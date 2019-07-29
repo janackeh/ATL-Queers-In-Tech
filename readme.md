@@ -9,7 +9,7 @@ Welcome to my 3rd project! In this project, I wanted to create a meetup type app
 * Heroku : [heroku](https://atl-queers-in-tech.herokuapp.com/)
 
 ## Wireframes :
-![IMG1](https://user-images.githubusercontent.com/50855671/62065536-337a3500-b1fd-11e9-9e35-aeda5a23713a.JPG)
+![IMG1](https://user-images.githubusercontent.com/50855671/62066749-0bd89c00-b200-11e9-984e-2a1c82b50500.JPG)
 ![IMG2](https://user-images.githubusercontent.com/50855671/62065609-54db2100-b1fd-11e9-8e9a-dfdcb0f25175.JPG)
 
 ## ERD :
